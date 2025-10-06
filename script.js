@@ -70,3 +70,16 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 
 sections.forEach(section => observer.observe(section));
+
+
+// Smooth scrolling effect for navbar links
+document.querySelectorAll('.nav-link').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    if (this.getAttribute('href').startsWith('#')) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  });
+});
