@@ -1,0 +1,75 @@
+body { 
+    scroll-behavior: smooth; 
+} 
+/* Sections */ 
+section { 
+    padding: 60px 0; 
+} 
+/* Navbar */ 
+.navbar { 
+    background: #0d6efd; 
+} 
+.navbar a { 
+    color: white !important; 
+} 
+/* Hero */ 
+#hero { 
+    height: 100vh; 
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://picsum.photos/1600/900") no-repeat center center/cover; color: white; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+} 
+#hero h1 { 
+    font-size: 3rem; 
+    font-weight: bold; 
+} 
+#hero p { 
+    font-size: 1.3rem; 
+} 
+/* Projects */ 
+.project-card img { 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+/* Platform cards */
+.platform-card {
+  background-color: #111;  /* slightly lighter than black */
+  color: #fff;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.platform-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(255,255,255,0.2);
+}
+
+/* Logos */
+/* Logos white for dark background */
+.platform-logo {
+  width: 50px;
+  height: 50px;
+  filter: invert(1); /* makes the logo white */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.platform-logo:hover {
+  transform: scale(1.2);
+  filter: invert(0.7) brightness(1.5); /* slightly brighter on hover */
+}
+
+
+/* Footer */ 
+footer { 
+    background: #0d6efd; 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+}
+
